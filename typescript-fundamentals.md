@@ -97,4 +97,10 @@ Take notes on this.typescript-fundamentals.md
     console.log(value); //function doesn't return anything, it's type is void
    }
 8. Configuring the Compiler
-   
+    create a typescript config file with:
+    npx tsc --init
+
+    Do not change things without knowing what you are doing.
+
+    Most notable is the "strict": true;
+    it enables type checking.
