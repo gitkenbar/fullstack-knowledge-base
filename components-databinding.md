@@ -126,14 +126,19 @@
     ngOnInit(): Called once the component is initialized
         runs as soon as component is initialized, before it is rendered, it runs after the constructor()
     ngDoCheck(): Called during every change detection run
-        runs any time change detection does a check, whether on button click, timer fired or observable resolution, i.e. ALL THE TIME
+        runs any time change detection does a check, whether on button click, timer fired or observable resolution, 
+        i.e. 
+        ALL THE TIME
         this could be used to manually inform Angular about a change it wouldn't otherwise detect (very advanced Use-Case)
-    ngAfterContentInit(): Called after content (ng-content) has been projected into view
+    ngAfterContentInit(): 
+    Called after content (ng-content) has been projected into view
         called whenver content from ng-content has been initialized
-    ngAfterContentChecked(): Called every time the projected content has been checked
+    ngAfterContentChecked(): 
+        Called every time the projected content has been checked
         executed after change detection checks the content projected onto the component
 
-    ngAfterViewInit(): Called after the component’s view (and child views) has been initialized
+    ngAfterViewInit():
+         Called after the component’s view (and child views) has been initialized
         executed once the view of the current component has been loaded
     ngAfterViewChecked():Called every time the view (and child views) have been checked
         this is called after all the changes are made, or if no changes are found
